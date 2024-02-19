@@ -1,19 +1,22 @@
 package com.example.assigment.models;
 
 import com.example.assigment.enums.Sex;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
+@Table(name="persons")
 public class Person {
     @Id
     @GeneratedValue
+    @Column(name = "id")
     private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "sex")
     private Sex sex;
+    @Column(name = "birthday")
     private Date birthday;
 
     public Person(String name, Sex sex, Date birthday) {
