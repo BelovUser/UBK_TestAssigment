@@ -15,13 +15,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Stateless
-public class PersonService {
+public class PersonService implements PersonServiceRemote {
     @PersistenceContext
     public EntityManager entityManager;
 
     public void createPerson(String name, String sex, String birthday) throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("DD.MM.YYYY");
-        Person person = new Person(name,Sex.valueOf(sex),dateFormat.parse(birthday));
+        Person person = new Person(name, Sex.valueOf(sex), dateFormat.parse(birthday));
 
         entityManager.persist(person);
     }
