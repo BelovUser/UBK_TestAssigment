@@ -1,6 +1,6 @@
 # Assiment Project
 
-In this Assigment I should have created and __EJB project__ With Entity Person and Statles Person Repository with simple CRUD operation methods.
+For this assignment, the task was to develop an __EJB project__ with a Person entity and a Stateless Person Repository, that should had simple CRUD operation methods.
 
 #
 
