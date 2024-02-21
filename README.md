@@ -18,7 +18,7 @@ After each new review that I received, I created a new map. In this file, I will
 This project has only one Entity, which is Person. All communication with the database is done through EntityManager. I used an H2 Database and
 modified persistence.xml and glassfish-resources.xml (for creating a pool for the DB) to work with this DB.
 
-|         Person        |
+| Person    |           |
 | :-------- | :-------- | 
 | `Long`    | `personId`| 
 | `String`  | `name`    | 
